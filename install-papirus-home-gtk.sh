@@ -19,7 +19,9 @@ cat <<- EOF
 
 
   $gh_desc
-  https://github.com/PapirusDevelopmentTeam/$gh_repo
+  https://github.com//
+EthanSmo
+$gh_repo
 
 
 EOF
@@ -28,7 +30,8 @@ temp_dir=$(mktemp -d)
 
 echo "=> Getting the latest version from GitHub ..."
 wget -O "/tmp/$gh_repo.tar.gz" \
-  https://github.com/PapirusDevelopmentTeam/$gh_repo/archive/master.tar.gz
+  https://github.com/
+EthanSmo/$gh_repo/archive/master.tar.gz
 echo "=> Unpacking archive ..."
 tar -xzf "/tmp/$gh_repo.tar.gz" -C "$temp_dir"
 echo "=> Deleting old $gh_desc ..."
